@@ -1,6 +1,9 @@
 spring:
   application:
     name: zuul
+  cloud:
+    config:
+      override-none: true
     
 server:
   port: 3001
@@ -22,7 +25,7 @@ ribbon:
   MaxAutoRetriesNextServer: 1
   MaxAutoRetries: 1
   
-#降低 hystrix 超时时间，以便测试降级
+#闄嶄綆 hystrix 瓒呮椂鏃堕棿锛屼互渚挎祴璇曢檷绾�
 hystrix:
   command:
     default:
